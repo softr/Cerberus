@@ -1,0 +1,22 @@
+{
+    "name": "softr/cerberus",
+    "type": "mako-package",
+    "description": "Driver based Acl package for Mako Framework",
+    "keywords": ["mako", "framework", "acl"],
+    "homepage": "https://github.com/softr/cerberus",
+    "authors": [
+        {
+            "name": "Aldo Anizio Lugão Camacho",
+            "email": "contato@softr.com.br",
+            "homepage": "http://www.softr.com.br"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "softr\\cerberus\\": "classes"
+        }
+    },
+    "require": {
+        "composer/installers": "*"
+    }
+}
