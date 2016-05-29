@@ -324,11 +324,11 @@ class ManagerProvider
     /**
      * Determine if manager is a super user
      *
-     * @access  private
+     * @access  public
      * @return  boolean
      */
 
-    private function isSuperUser()
+    public function isSuperUser()
     {
         return in_array($this->manager->getManagerId(), $this->superUsers);
     }
