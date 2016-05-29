@@ -153,7 +153,7 @@ class ManagerProvider
 
         foreach($rules as $args)
         {
-            $result = call_user_func_array(array($this, 'can'), $args);
+            $result = call_user_func_array(array($this, 'can'), [$args]);
 
             if($result === false)
             {
@@ -186,7 +186,7 @@ class ManagerProvider
 
         foreach($rules as $args)
         {
-            $result = call_user_func_array(array($this, 'can'), $args);
+            $result = call_user_func_array(array($this, 'can'), [$args]);
 
             if($result === true)
             {
