@@ -87,7 +87,9 @@ class Resource implements \softr\cerberus\Resources\ResourceInterface
 
     public function hasIds()
     {
-        return !empty($this->getIds());
+        $ids = $this->getIds();
+
+        return empty($ids) == false;
     }
 
     /**
